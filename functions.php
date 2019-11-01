@@ -1,6 +1,6 @@
 <?php
 if (empty(getenv("DATABASE_URL"))){
-      $pdo = new PDO('pgsql:host=localhost;port=5432;dbname=', '', '');
+      $pdo = new PDO('pgsql:host=localhost;port=5432;dbname=d4kpgmfmccefci', '', '');
   } 
  else {
     $db = parse_url(getenv("DATABASE_URL"));
