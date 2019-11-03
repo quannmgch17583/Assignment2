@@ -40,7 +40,7 @@
                       <div class="sp w3-quarter w3-card w3-center">
                         <div class="w3-white w3-padding-large">Available</div>
                         <div>
-                          <a href="www.google.com"><img src="./images/item/1.jpg" alt="test1" width="200px" height="200px"></a>
+                          <a href="./payment.php"><img src="./images/item/1.jpg" alt="test1" width="200px" height="200px"></a>
                         </div>
                         <div class="name"><h3>Test1</h3></div>
                         <div class="price"><h3>Test2</h3></div>
@@ -49,22 +49,50 @@
                       <div class="sp w3-quarter w3-card w3-center">
                         <div class="w3-white w3-padding-large">Available</div>
                         <div>
-                          <img src="./images/item/2.jpg" alt="test1" width="200px" height="200px">
+                          <a href="./payment.php"><img src="./images/item/2.jpg" alt="test1" width="200px" height="200px"></a>
                         </div>
+                        <div class="name"><h3>Test1</h3></div>
+                        <div class="price"><h3>Test2</h3></div>
                       </div>
 
                       <div class="sp w3-quarter w3-card w3-center">
                         <div class="w3-white w3-padding-large">Available</div>
                         <div>
-                          <img src="./images/item/3.jpg" alt="test1" width="200px" height="200px">
+                          <a href="w./payment.php"><img src="./images/item/3.jpg" alt="test1" width="200px" height="200px"></a>
                         </div>
+                        <div class="name"><h3>Test1</h3></div>
+                        <div class="price"><h3>Test2</h3></div>
                       </div>
-                    </div>
     </div>
         
     <div class="list w3-row">
                     <div class="" id="nike"><h2>Nike</h2> 
-      
+                      <div class="sp w3-quarter w3-card w3-center">
+                        <div class="w3-white w3-padding-large">Available</div>
+                        <div>
+                          <a href="./payment.php"><img src="./images/item/8.jpg" alt="test1" width="200px" height="200px"></a>
+                        </div>
+                        <div class="name"><h3>Test1</h3></div>
+                        <div class="price"><h3>Test2</h3></div>
+                      </div>
+
+                      <div class="sp w3-quarter w3-card w3-center">
+                        <div class="w3-white w3-padding-large">Available</div>
+                        <div>
+                          <a href="./payment.php"><img src="./images/item/9.jpg" alt="test1" width="200px" height="200px"></a>
+                        </div>
+                        <div class="name"><h3>Test1</h3></div>
+                        <div class="price"><h3>Test2</h3></div>
+                      </div>
+
+                      <div class="sp w3-quarter w3-card w3-center">
+                        <div class="w3-white w3-padding-large">Available</div>
+                        <div>
+                          <a href="./payment.php"><img src="./images/item/10.jpg" alt="test1" width="200px" height="200px"></a>
+                        </div>
+                        <div class="name"><h3>Test1</h3></div>
+                        <div class="price"><h3>Test2</h3></div>
+                      </div>
                     </div>
     </div>
 
