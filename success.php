@@ -2,11 +2,9 @@
 <html>
 <body>
 
-<h1>My first PHP page</h1>
+<h1>This is the information of all customers who purchase products from the company</h1>
 
 <?php
-	echo "Show all rows from Postgres Database";
-	
 	//Refere to database 
 	$db = parse_url(getenv("DATABASE_URL"));
 	$pdo = new PDO("pgsql:" . sprintf(
@@ -30,7 +28,7 @@
 	<?php
 		foreach ($resultSet as $row) {
 			echo "<li>" .
-				$row["name"] . '--'. $row["gender"]
+				$row["name"] . '--'. $row["gender"] . '--' . $row["address"]
 			. "</li>";
 		}
 	?>
