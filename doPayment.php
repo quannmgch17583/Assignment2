@@ -36,9 +36,9 @@
 	 	Please check your information again
 	 </h3>
 	 <ul>
-	 	<li><?php echo Your birthday: $birthday?></li>
-	 	<li><?php echo Your gender: $gender?></li>
-	 	<li><?php echo Your address: $address?></li>
+	 	<li>Your birthday: <?php echo $birthday?></li>
+	 	<li>Your gender: <?php echo $gender?></li>
+	 	<li>Your address: <?php echo $address?></li>
 	 </ul>
 	 <a href="index.php">Index</a>
 </body>
