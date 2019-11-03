@@ -16,7 +16,7 @@
                         <li><a href="index.php">Home</a></li>
                         <li><a href="#adidas">Adidas</a></li>
                         <li><a href="#nike">Nike</a></li>
-                        <li style="float: right"><a href="success">Customers</a></li>
+                        <li style="float: right"><a href="success.php">Customers</a></li>
                     </ul>
                 </div>
             <div class="main">
