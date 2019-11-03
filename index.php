@@ -37,7 +37,12 @@
         </div>
     <div class="list w3-row">
                     <div class="" id="adidas"><h2>Adidas</h2>    
-
+                      <div class="sp w3-quarter w3-card w3-center">
+                        <div class="w3-white w3-padding-large">Available</div>
+                        <div>
+                          <img src="./images/item/1.jpg" alt="test1" width="200px" height="200px">
+                        </div>
+                      </div>
                     </div>
     </div>
         
