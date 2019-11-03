@@ -32,10 +32,13 @@
 	 ?>
 	 <h2>Thank you <?php echo $name?>  for choosing us!
 	 </h2>
+	 <h3>
+	 	Please check your information again
+	 </h3>
 	 <ul>
-	 	<li><?php echo $birthday?></li>
-	 	<li><?php echo $gender?></li>
-	 	<li><?php echo $address?></li>
+	 	<li><?php echo Your birthday: $birthday?></li>
+	 	<li><?php echo Your gender: $gender?></li>
+	 	<li><?php echo Your address: $address?></li>
 	 </ul>
 	 <a href="index.php">Index</a>
 </body>
