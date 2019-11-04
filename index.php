@@ -21,8 +21,8 @@ $result = queryMysql($query);
                 <div class="nav">
                     <ul>
                         <li><a href="index.php">Home</a></li>
-                        <li><a href="#adidas">Adidas</a></li>
-                        <li><a href="#nike">Nike</a></li>
+                        <li><a href="#Adidas">Adidas</a></li>
+                        <li><a href="#Nike">Nike</a></li>
                         <li style="float: right"><a href="index2.php">Admin</a></li>
                     </ul>
                 </div>
