@@ -95,4 +95,8 @@
                 margin-right: auto;
                 width: 15%;
             }
+            .iimage img{
+                width: 100%;
+                height: 50%
+            }
 
