@@ -8,12 +8,12 @@ if (isset($_POST['cid'], $_POST['cname'], $_POST['cdescription'])) {
     $stmt->bindValue(':cdescription', $_POST['cdescription'], PDO::PARAM_STR);
     $pdoExec = $stmt->execute();
     
-        // check if mysql insert query successful
+        //If mysql inserted successful
     if($pdoExec)
     {
-        echo 'Data Inserted';
+        echo 'Inserted successful';
     }else{
-        echo 'Data Not Inserted';
+        echo 'Error! Try again';
     }
 }
 ?>

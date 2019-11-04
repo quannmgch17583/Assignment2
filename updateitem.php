@@ -14,19 +14,19 @@ if (isset($_POST['iname'],$_POST['idescription'],$_POST['iprice'],$_POST['istatu
     $stmt->bindValue(':isize', $_POST['isize'], PDO::PARAM_STR);
     $pdoExec = $stmt->execute();
     
-        // check if mysql insert query successful
+        //If mysql updated successful
     if($pdoExec)
     {
-        echo 'Data Inserted';
+        echo 'Updated successful';
     }else{
-        echo 'Data Not Inserted';
+        echo 'Error! Try again';
     }
     
 }
-//for loading the data to the form
+//loading the data to the form
 if (isset($_POST['iid'])) {
     $iId = $_POST['iid'];
-    //Load the current data to that batch
+    //Load the current data
     $query = "SELECT iname, idescription, iprice, istatus, isize FROM item WHERE iid = '$iId'";
     $result = queryMysql($query);
     $row = mysqli_fetch_array($result);

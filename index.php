@@ -4,98 +4,9 @@
         <title>ATN Store</title>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-        <style>
-            .container{
-                width: 80%;
-                margin: 0 auto;
-            }
-            .container img{
-                width: 100%;
-
-            }
-            .footer{
-                width: 100%;
-                height: 100px;
-                background-color: white;
-            }
-            .main{
-                width: 100%;
-                overflow: hidden;
-                background-color: white;
-            }
-
-            .image img{
-                width: 100%;
-            }
-            .detail{
-                width: 100%;
-                float: right;
-                text-align: center;
-            }
-            .title{
-                background-color: white;
-                font-size: 25px;
-                line-height: 30px;
-                padding-left: 5px;
-                font-weight: bold;
-                color: purple;
-            }
-            .detail{
-                padding-left: 15px;
-                box-sizing: border-box;
-            }
-            .des{
-                color: red;
-                font-size: 18px;
-                padding-left: 10px;
-                padding-top: 10px;
-                font-weight: normal;
-            }
-
-            .list{
-                width: 100%;
-                padding-top: 10px;
-            }
-            .item{
-                width: 25%;
-                float: left;
-                padding: 5px;
-                box-sizing: border-box;
-            }
-            .iimage img{
-                width: 100%;
-                height : 50%;
-            }
-           
-
-            .nav{
-                width: 100%;
-                height: 50px;
-                background-color: black;
-            }
-            .nav ul{
-                margin: 0;
-                padding: 0;
-                list-style: none;
-            }
-            .nav a{
-                color:whitesmoke;
-                font-size: 30px;
-                text-decoration: none;
-                line-height: 50px;
-                padding: 0 15px;
-                display: block;
-            }
-            .nav li{
-                float: left;
-            }
-            .nav a:hover{
-                color: #792323;
-            }
-            .nav li:hover{
-                background-color:#DCF4F6;
-            }
-        </style>
+        <link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/style1.css">
+		<link rel="stylesheet" href="css/menu_style.css">
     </head>
     <body>
         <?php
@@ -105,42 +16,34 @@ $query = "SELECT iid, iname, idescription, iprice, istatus, isize, iimage FROM I
 $result = queryMysql($query);
 
 ?>
-
-            <div class="container">
-            <center><img src="toy.png"></center>
-            <div class="header">
-                
+			<div class="container">
+                <img id="logo" src="images/logo.png"/>
                 <div class="nav">
                     <ul>
-                        <center><li><a href="./index.php">Home</a></li></center>
-                        <center><li><a href="./header.php">Admin</a></li></center>
-                        <li><a href="#Lego">Lego</a></li>
-                        <li><a href="#Doll">Doll</a></li>
-                        
-
+                        <li><a href="index.php">Home</a></li>
+                        <li><a href="#adidas">Adidas</a></li>
+                        <li><a href="#nike">Nike</a></li>
+                        <li style="float: right"><a href="index2.php">Admin</a></li>
                     </ul>
-
-
-                
                 </div>
-            </div>
-            <div class="main">
-                <div class="hot">
-
-                    <div class="detail">
-                        <div class="title">
-                            <i>Welcome to ATN Store</i>
-                        </div>
-                        <div class="des">
-                             Baby's paradise!!!
-                        </div>
-                    </div>
-                </div>
-                <div class="seperator">
-
-                </div>
+            	<div class="main">
+                	<div class="hot">
+                    	<div class="image">
+                        	<img src="images/main.jpeg">
+                    	</div>
+                    	<div class="detail">
+                        	<div class="title">
+                            Basketball Sneakers Shop
+                        	</div>
+                    	</div>
+                	</div>
+                	<div class="seperator">
+                	</div>
+                	<div class="item"></div>
+            	</div>
+        	</div>
                 <div class="list w3-row">
-                    <div class="" id="Lego"><h2>Lego</h2>
+                    <div class="" id="Adidas"><h2>Adidas</h2>
              <?php
      require_once './functions.php';
      $query = "SELECT iid, iname, idescription, iprice, istatus, isize, iimage,cname FROM Item,Catalogue WHERE Item.cid=Catalogue.cid AND cName LIKE '%Lego%'  ORDER BY cname";
@@ -185,7 +88,7 @@ $result = queryMysql($query);
      
                 </div>        
                     <div class="list w3-row">
-                    <div class=""id="Doll"><h2>Doll</h2>
+                    <div class=""id="Nike"><h2>Nike</h2>
                     <?php
      require_once './functions.php';
     $query = "SELECT iid, iname, idescription, iprice, istatus, isize, iimage,cname FROM Item,Catalogue WHERE Item.cid=Catalogue.cid AND cName LIKE '%Doll%'  ORDER BY cname";
@@ -246,7 +149,7 @@ $result = queryMysql($query);
       border: 1px solid #484747;">
     </form>
   </div>
-  <div class="childfooter" id="rightfooter" style="padding: 20px; padding-left: 40px">© 2019 ATN Store. All Rights Reserved | Design by Hoang GCH16435</div>
+  <div class="childfooter" id="rightfooter" style="padding: 20px; padding-left: 40px">ATN Sneakers Store - Designed by Quan</div>
               
             </div>
         </div>

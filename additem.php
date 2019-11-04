@@ -7,7 +7,7 @@ if (isset($_POST['iid'],$_POST['iname'],$_POST['idescription'],$_POST['iprice'],
     $iId = $_POST['iid'];
     $iImage = "";
     $extension = "";
-    //Process the uploaded image
+    //Upload image
     if (isset($_FILES['iimage']) && $_FILES['iimage']['size'] != 0) {
         $temp_name = $_FILES['iimage']['tmp_name'];
         $name = $_FILES['iimage']['name'];
@@ -16,7 +16,7 @@ if (isset($_POST['iid'],$_POST['iname'],$_POST['idescription'],$_POST['iprice'],
         $extension = $parts[$lastIndex];
         $iImage = "$iId.$extension";
         $destination = "./images/$iImage";
-        //Move the file from temp loc => to our image folder
+        //Move the file from temp
         move_uploaded_file($temp_name, $destination);
     }
    
@@ -32,12 +32,12 @@ if (isset($_POST['iid'],$_POST['iname'],$_POST['idescription'],$_POST['iprice'],
     $stmt->bindValue(':iimage', $iImage, PDO::PARAM_STR);
     $pdoExec = $stmt->execute();
     
-        // check if mysql insert query successful
+        //If inserted successful
     if($pdoExec)
     {
-        echo 'Data Inserted';
+        echo 'Inserted successful';
     }else{
-        echo 'Data Not Inserted';
+        echo 'Error! Try again';
     }
 }
 ?>

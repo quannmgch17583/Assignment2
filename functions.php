@@ -16,7 +16,7 @@ if (empty(getenv("DATABASE_URL"))){
   }
   
 
-//this is used to execute all SQL queries
+//Execute all SQL queries
 function queryMysql($query) {
     global $pdo;
     $result = $pdo->query($query);

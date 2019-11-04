@@ -1,6 +1,6 @@
  <?php
 require_once 'header.php';
-//Check to make sure that user is logged in first
+
 if (isset($_POST['cname'], $_POST['cdescription'])) { //updating
     $cId = $_POST['cid'];
     
@@ -9,11 +9,12 @@ if (isset($_POST['cname'], $_POST['cdescription'])) { //updating
         $stmt->bindValue(':cname', $_POST['cname'], PDO::PARAM_STR);
         $stmt->bindValue(':cdescription', $_POST['cdescription'], PDO::PARAM_STR);
         $pdoExec = $stmt->execute();
-        if($pdoExec)
+
+    if($pdoExec)
     {
-        echo 'Data Updated';
+        echo 'Updated successful';
     }else{
-        echo 'Data Not Updated';
+        echo 'Error! Try again';
     }
     }
 //for loading the data to the form
