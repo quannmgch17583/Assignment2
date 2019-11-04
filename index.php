@@ -46,7 +46,7 @@ $result = queryMysql($query);
                     <div class="" id="Adidas"><h2>Adidas</h2>
              <?php
      require_once './functions.php';
-     $query = "SELECT iid, iname, idescription, iprice, istatus, isize, iimage,cname FROM Item,Catalogue WHERE Item.cid=Catalogue.cid AND cName LIKE '%Lego%'  ORDER BY cname";
+     $query = "SELECT iid, iname, idescription, iprice, istatus, isize, iimage,cname FROM item,catalogue WHERE item.cid=catalogue.cid AND cName LIKE '%Adidas%'  ORDER BY cname";
      $result = queryMysql($query);
      $result->setFetchMode(PDO::FETCH_ASSOC);
      $result->execute();
@@ -91,7 +91,7 @@ $result = queryMysql($query);
                     <div class=""id="Nike"><h2>Nike</h2>
                     <?php
      require_once './functions.php';
-    $query = "SELECT iid, iname, idescription, iprice, istatus, isize, iimage,cname FROM Item,Catalogue WHERE Item.cid=Catalogue.cid AND cName LIKE '%Doll%'  ORDER BY cname";
+    $query = "SELECT iid, iname, idescription, iprice, istatus, isize, iimage,cname FROM item,catalogue WHERE item.cid=catalogue.cid AND cName LIKE '%Nike%'  ORDER BY cname";
      $result = queryMysql($query);
      $result->setFetchMode(PDO::FETCH_ASSOC);
      $result->execute();
