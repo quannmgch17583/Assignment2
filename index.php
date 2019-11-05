@@ -140,7 +140,7 @@ $result = queryMysql($query);
   <div class="childfooter" id="leftfooter">
     <form action="#">
       <input type="text" placeholder="Enter your Email" style="border: 1px solid #484747; padding: 8px;">
-      <input type="submit" value="Subcrible" style=" padding: 7px;
+      <input type="submit" value="Submit" style=" padding: 7px;
       padding-left: 20px;
       text-align: center;
       padding-right: 20px;
