@@ -17,13 +17,13 @@ if (empty(getenv("DATABASE_URL"))){
   
 
 //Execute all SQL queries
-//function queryMysql($query) {
- //   global $pdo;
- //  $result = $pdo->query($query);
-  //  if (!$result) {
-  //      die ($pdo->error);
- //   }
-   // return $result;
-//}
+function queryMysql($query) {
+   global $pdo;
+   $result = $pdo->query($query);
+    if (!$result) {
+    die ($pdo->error);
+    }
+    return $result;
+}
 
 
