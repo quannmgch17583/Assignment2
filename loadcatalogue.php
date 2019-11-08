@@ -29,10 +29,6 @@ $resultSet = $result->fetchAll();
                 <input type="hidden" name="cid" value="<?php echo $row['cid'] ?>" />
                 <input type="submit" value="Delete" />
             </form>
-            <form class="frminline" action="updatecatalogue.php" method="post">
-                <input type="hidden" name="cid" value="<?php echo $row['cid'] ?>" />
-                <input type="submit" value="Update" />
-            </form>
         </td>
         <?php
         echo "</tr>";

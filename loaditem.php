@@ -43,10 +43,6 @@ $resultSet = $result->fetchAll();
                 <input type="hidden" name="iid" value="<?php echo $row['iid'] ?>" />
                 <input type="submit" value="Delete" />
             </form>
-            <form class="frminline" action="updateitem.php" method="post">
-                <input type="hidden" name="iid" value="<?php echo $row['iid'] ?>" />
-                <input type="submit" value="Update" />
-            </form>
         </td>
         <?php
         echo "</tr>";
