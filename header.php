@@ -12,7 +12,6 @@ session_start();
     <body>
     <center><img src="images/logo.png"></center>
     <?php
-    require_once './functions.php';
         include_once './menu_admin.php';
     ?>
 </body>
