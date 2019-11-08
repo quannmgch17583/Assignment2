@@ -1,6 +1,4 @@
 <?php
-require_once 'header.php';
-
 //getting the data
 
 if (isset($_POST['iid'],$_POST['iname'],$_POST['idescription'],$_POST['iprice'],$_POST['istatus'],$_POST['isize'],  $_POST['cid'])) { //adding

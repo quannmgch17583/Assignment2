@@ -1,5 +1,4 @@
 <?php
-require_once './header.php';
 
 $query = "SELECT iid, iname, idescription, iprice, istatus, isize, iimage FROM item";
 $result = queryMysql($query);
