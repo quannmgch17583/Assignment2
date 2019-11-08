@@ -1,5 +1,5 @@
 <?php
-require_once './index2.php';
+require_once './header.php';
 if (isset($_POST['cid'], $_POST['cname'], $_POST['cdescription'])) {
     $sql = "INSERT INTO catalogue(cid, cname, cdescription) values(:cid , :cname, :cdescription)";
     $stmt = $pdo->prepare($sql);
