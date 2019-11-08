@@ -1,5 +1,5 @@
 <?php
-
+require_once './index2.php';
 $query = "SELECT cid, cname, cdescription from catalogue";
 $result = queryMysql($query);
 $result = queryMysql($query);
